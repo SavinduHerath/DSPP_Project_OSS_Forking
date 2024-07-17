@@ -1,0 +1,805 @@
+,created_at,body,developer,keywords
+46,2022-08-31T19:19:39Z,"GA is used for minimal usage data collection and it's specific use may be reviewed in the open source code. It would be nice to do away with GA entirely, but at the moment there is not a practical replacement.
+
+If you have a feature-parity replacement idea, please review the contribution guidelines and submit a diff.
+
+Thanks!",BytesOfMan,open source
+235,2020-10-23T13:55:36Z,"same error here..
+started with a fresh git clone, checkout master
+
+> cmake -GNinja ..
+-- The C compiler identification is GNU 9.2.1
+-- The CXX compiler identification is GNU 9.2.1
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python: /usr/bin/python3.5 (found suitable version ""3.5.2"", minimum required is ""3.5"") found components: Interpreter 
+-- Found Git: /usr/bin/git (found version ""2.7.4"") 
+-- Performing Test have_CXX__Werror_unused_command_line_argument
+-- Performing Test have_CXX__Werror_unused_command_line_argument - Failed
+-- Performing Test have_linker__fuse_ld_gold
+-- Performing Test have_linker__fuse_ld_gold - Success
+-- Performing Test have_C__g3
+-- Performing Test have_C__g3 - Success
+-- Performing Test have_CXX__g3
+-- Performing Test have_CXX__g3 - Success
+-- Performing Test have_C__ftrapv
+-- Performing Test have_C__ftrapv - Success
+-- Performing Test have_CXX__ftrapv
+-- Performing Test have_CXX__ftrapv - Success
+-- Performing Test have_C__fstack_reuse_none
+-- Performing Test have_C__fstack_reuse_none - Success
+-- Performing Test have_CXX__fstack_reuse_none
+-- Performing Test have_CXX__fstack_reuse_none - Success
+-- Performing Test have_CXX__fstack_protector_all
+-- Performing Test have_CXX__fstack_protector_all - Success
+-- Performing Test have_CXX__Wstack_protector
+-- Performing Test have_CXX__Wstack_protector - Success
+-- Performing Test have_C__U_FORTIFY_SOURCE
+-- Performing Test have_C__U_FORTIFY_SOURCE - Success
+-- Performing Test have_CXX__U_FORTIFY_SOURCE
+-- Performing Test have_CXX__U_FORTIFY_SOURCE - Success
+-- Performing Test have_linker__Wl___dynamicbase
+-- Performing Test have_linker__Wl___dynamicbase - Failed
+-- Performing Test have_linker__Wl___nxcompat
+-- Performing Test have_linker__Wl___nxcompat - Failed
+-- Performing Test have_linker__Wl___high_entropy_va
+-- Performing Test have_linker__Wl___high_entropy_va - Failed
+-- Performing Test have_linker__Wl__z_relro
+-- Performing Test have_linker__Wl__z_relro - Success
+-- Performing Test have_linker__Wl__z_now
+-- Performing Test have_linker__Wl__z_now - Success
+-- Performing Test have_C__Wnested_externs
+-- Performing Test have_C__Wnested_externs - Success
+-- Performing Test have_C__Wstrict_prototypes
+-- Performing Test have_C__Wstrict_prototypes - Success
+-- Performing Test have_C__Wall
+-- Performing Test have_C__Wall - Success
+-- Performing Test have_C__Wextra
+-- Performing Test have_C__Wextra - Success
+-- Performing Test have_C__Wformat
+-- Performing Test have_C__Wformat - Success
+-- Performing Test have_C__Wvla
+-- Performing Test have_C__Wvla - Success
+-- Performing Test have_C__Wcast_align
+-- Performing Test have_C__Wcast_align - Success
+-- Performing Test have_C__Wunused_parameter
+-- Performing Test have_C__Wunused_parameter - Success
+-- Performing Test have_C__Wmissing_braces
+-- Performing Test have_C__Wmissing_braces - Success
+-- Performing Test have_C__Wthread_safety
+-- Performing Test have_C__Wthread_safety - Failed
+-- Performing Test have_C__Wshadow
+-- Performing Test have_C__Wshadow - Success
+-- Performing Test have_C__Wshadow_field
+-- Performing Test have_C__Wshadow_field - Failed
+-- Performing Test have_C__Wrange_loop_analysis
+-- Performing Test have_C__Wrange_loop_analysis - Failed
+-- Performing Test have_C__Wredundant_decls
+-- Performing Test have_C__Wredundant_decls - Success
+-- Performing Test have_CXX__Wall
+-- Performing Test have_CXX__Wall - Success
+-- Performing Test have_CXX__Wextra
+-- Performing Test have_CXX__Wextra - Success
+-- Performing Test have_CXX__Wformat
+-- Performing Test have_CXX__Wformat - Success
+-- Performing Test have_CXX__Wvla
+-- Performing Test have_CXX__Wvla - Success
+-- Performing Test have_CXX__Wcast_align
+-- Performing Test have_CXX__Wcast_align - Success
+-- Performing Test have_CXX__Wunused_parameter
+-- Performing Test have_CXX__Wunused_parameter - Success
+-- Performing Test have_CXX__Wmissing_braces
+-- Performing Test have_CXX__Wmissing_braces - Success
+-- Performing Test have_CXX__Wthread_safety
+-- Performing Test have_CXX__Wthread_safety - Failed
+-- Performing Test have_CXX__Wshadow
+-- Performing Test have_CXX__Wshadow - Success
+-- Performing Test have_CXX__Wshadow_field
+-- Performing Test have_CXX__Wshadow_field - Failed
+-- Performing Test have_CXX__Wrange_loop_analysis
+-- Performing Test have_CXX__Wrange_loop_analysis - Failed
+-- Performing Test have_CXX__Wredundant_decls
+-- Performing Test have_CXX__Wredundant_decls - Success
+-- Performing Test have_C__Wformat__Wformat_security
+-- Performing Test have_C__Wformat__Wformat_security - Success
+-- Performing Test have_CXX__Wformat__Wformat_security
+-- Performing Test have_CXX__Wformat__Wformat_security - Success
+-- Performing Test have_CXX__Wredundant_move
+-- Performing Test have_CXX__Wredundant_move - Success
+-- Performing Test have_C__Wno_unused_parameter
+-- Performing Test have_C__Wno_unused_parameter - Success
+-- Performing Test have_CXX__Wno_unused_parameter
+-- Performing Test have_CXX__Wno_unused_parameter - Success
+-- Performing Test have_C__Wno_implicit_fallthrough
+-- Performing Test have_C__Wno_implicit_fallthrough - Success
+-- Performing Test have_CXX__Wno_implicit_fallthrough
+-- Performing Test have_CXX__Wno_implicit_fallthrough - Success
+-- Looking for include file endian.h
+-- Looking for include file endian.h - found
+-- Looking for include file sys/endian.h
+-- Looking for include file sys/endian.h - not found
+-- Looking for htole16
+-- Looking for htole16 - found
+-- Looking for htobe16
+-- Looking for htobe16 - found
+-- Looking for be16toh
+-- Looking for be16toh - found
+-- Looking for le16toh
+-- Looking for le16toh - found
+-- Looking for htobe32
+-- Looking for htobe32 - found
+-- Looking for htole32
+-- Looking for htole32 - found
+-- Looking for be32toh
+-- Looking for be32toh - found
+-- Looking for le32toh
+-- Looking for le32toh - found
+-- Looking for htobe64
+-- Looking for htobe64 - found
+-- Looking for htole64
+-- Looking for htole64 - found
+-- Looking for be64toh
+-- Looking for be64toh - found
+-- Looking for le64toh
+-- Looking for le64toh - found
+-- Looking for include file byteswap.h
+-- Looking for include file byteswap.h - found
+-- Looking for bswap_16
+-- Looking for bswap_16 - found
+-- Looking for bswap_32
+-- Looking for bswap_32 - found
+-- Looking for bswap_64
+-- Looking for bswap_64 - found
+-- Looking for include file sys/select.h
+-- Looking for include file sys/select.h - found
+-- Looking for include file sys/prctl.h
+-- Looking for include file sys/prctl.h - found
+-- Looking for __builtin_clz
+-- Looking for __builtin_clz - found
+-- Looking for __builtin_clzl
+-- Looking for __builtin_clzl - found
+-- Looking for __builtin_clzll
+-- Looking for __builtin_clzll - found
+-- Looking for __builtin_popcount
+-- Looking for __builtin_popcount - found
+-- Looking for M_ARENA_MAX
+-- Looking for M_ARENA_MAX - found
+-- Looking for malloc_info
+-- Looking for malloc_info - found
+-- Looking for strnlen
+-- Looking for strnlen - found
+-- Looking for daemon
+-- Looking for daemon - found
+-- Looking for getentropy
+-- Looking for getentropy - not found
+-- Looking for getentropy
+-- Looking for getentropy - not found
+-- Looking for include files sys/types.h, vm/vm_params.h
+-- Looking for include files sys/types.h, vm/vm_params.h - not found
+-- Looking for include files sys/types.h, sys/vmmeter.h
+-- Looking for include files sys/types.h, sys/vmmeter.h - not found
+-- Looking for include files sys/types.h, sys/resources.h
+-- Looking for include files sys/types.h, sys/resources.h - not found
+-- Looking for getifaddrs
+-- Looking for getifaddrs - found
+-- Looking for freeifaddrs
+-- Looking for freeifaddrs - found
+-- Performing Test HAVE_SYS_GETRANDOM
+-- Performing Test HAVE_SYS_GETRANDOM - Success
+-- Performing Test HAVE_SYSCTL_ARND
+-- Performing Test HAVE_SYSCTL_ARND - Failed
+-- Performing Test CHAR_EQUALS_INT8
+-- Performing Test CHAR_EQUALS_INT8 - Failed
+-- Performing Test HAVE_LARGE_FILE_SUPPORT
+-- Performing Test HAVE_LARGE_FILE_SUPPORT - Success
+-- Performing Test HAVE_FUNC_ATTRIBUTE_VISIBILITY
+-- Performing Test HAVE_FUNC_ATTRIBUTE_VISIBILITY - Success
+-- Performing Test HAVE_FUNC_ATTRIBUTE_DLLEXPORT
+-- Performing Test HAVE_FUNC_ATTRIBUTE_DLLEXPORT - Failed
+-- Looking for std::system
+-- Looking for std::system - found
+-- Looking for ::wsystem
+-- Looking for ::wsystem - not found
+-- Found PkgConfig: /usr/bin/pkg-config (found version ""0.29.1"") 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Found Threads: TRUE  
+-- Found Jemalloc component jemalloc: /usr/lib/x86_64-linux-gnu/libjemalloc_pic.a
+-- Check if jemalloc needs libdl - FALSE
+-- Found Jemalloc: /usr/include/jemalloc (found suitable version ""3.6.0"", minimum required is ""3.6.0"")  
+-- Performing Test ENABLE_SSE41
+-- Performing Test ENABLE_SSE41 - Success
+-- Performing Test ENABLE_AVX2
+-- Performing Test ENABLE_AVX2 - Success
+-- Performing Test ENABLE_SHANI
+-- Performing Test ENABLE_SHANI - Success
+-- Performing Test have_C__Wno_inconsistent_missing_override
+-- Performing Test have_C__Wno_inconsistent_missing_override - Success
+-- Performing Test have_C__Wno_maybe_uninitialized
+-- Performing Test have_C__Wno_maybe_uninitialized - Success
+-- Performing Test have_C__Wno_shadow
+-- Performing Test have_C__Wno_shadow - Success
+-- Performing Test have_C__Wno_sign_compare
+-- Performing Test have_C__Wno_sign_compare - Success
+-- Performing Test have_C__Wno_unused_const_variable
+-- Performing Test have_C__Wno_unused_const_variable - Success
+-- Performing Test have_CXX__Wno_inconsistent_missing_override
+-- Performing Test have_CXX__Wno_inconsistent_missing_override - Success
+-- Performing Test have_CXX__Wno_maybe_uninitialized
+-- Performing Test have_CXX__Wno_maybe_uninitialized - Success
+-- Performing Test have_CXX__Wno_shadow
+-- Performing Test have_CXX__Wno_shadow - Success
+-- Performing Test have_CXX__Wno_sign_compare
+-- Performing Test have_CXX__Wno_sign_compare - Success
+-- Performing Test have_CXX__Wno_unused_const_variable
+-- Performing Test have_CXX__Wno_unused_const_variable - Success
+-- Performing Test have_C__Wno_strict_prototypes
+-- Performing Test have_C__Wno_strict_prototypes - Success
+-- Looking for C++ include atomic
+-- Looking for C++ include atomic - found
+-- Performing Test ENABLE_HWCRC32
+-- Performing Test ENABLE_HWCRC32 - Success
+-- Performing Test have_C__pedantic
+-- Performing Test have_C__pedantic - Success
+-- Performing Test have_C__Wundef
+-- Performing Test have_C__Wundef - Success
+-- Performing Test have_C__Wno_unused_function
+-- Performing Test have_C__Wno_unused_function - Success
+-- Performing Test have_C__Wno_overlength_strings
+-- Performing Test have_C__Wno_overlength_strings - Success
+-- Performing Test have_C__std_c89
+-- Performing Test have_C__std_c89 - Success
+-- Performing Test have_C__Wno_long_long
+-- Performing Test have_C__Wno_long_long - Success
+-- Performing Test USE_ASM_X86_64
+-- Performing Test USE_ASM_X86_64 - Success
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version ""1.0.2g"") found components: Crypto 
+-- Found Event component event: /usr/lib/x86_64-linux-gnu/libevent.so
+CMake Error at /usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake:146 (message):
+  Could NOT find Event: Found unsuitable version ""2.0.21-stable"", but
+  required is at least ""2.0.22"" (found /usr/include)
+Call Stack (most recent call first):
+  /usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake:391 (_FPHSA_FAILURE_MESSAGE)
+  cmake/modules/FindEvent.cmake:85 (find_package_handle_standard_args)
+  cmake/modules/NativeExecutable.cmake:25 (find_package)
+  src/CMakeLists.txt:394 (non_native_target_link_libraries)
+  src/CMakeLists.txt:397 (link_event)",M8BWNN,reuse
+295,2022-08-31T19:19:39Z,"GA is used for minimal usage data collection and it's specific use may be reviewed in the open source code. It would be nice to do away with GA entirely, but at the moment there is not a practical replacement.
+
+If you have a feature-parity replacement idea, please review the contribution guidelines and submit a diff.
+
+Thanks!",BytesOfMan,open source
+484,2020-10-23T13:55:36Z,"same error here..
+started with a fresh git clone, checkout master
+
+> cmake -GNinja ..
+-- The C compiler identification is GNU 9.2.1
+-- The CXX compiler identification is GNU 9.2.1
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python: /usr/bin/python3.5 (found suitable version ""3.5.2"", minimum required is ""3.5"") found components: Interpreter 
+-- Found Git: /usr/bin/git (found version ""2.7.4"") 
+-- Performing Test have_CXX__Werror_unused_command_line_argument
+-- Performing Test have_CXX__Werror_unused_command_line_argument - Failed
+-- Performing Test have_linker__fuse_ld_gold
+-- Performing Test have_linker__fuse_ld_gold - Success
+-- Performing Test have_C__g3
+-- Performing Test have_C__g3 - Success
+-- Performing Test have_CXX__g3
+-- Performing Test have_CXX__g3 - Success
+-- Performing Test have_C__ftrapv
+-- Performing Test have_C__ftrapv - Success
+-- Performing Test have_CXX__ftrapv
+-- Performing Test have_CXX__ftrapv - Success
+-- Performing Test have_C__fstack_reuse_none
+-- Performing Test have_C__fstack_reuse_none - Success
+-- Performing Test have_CXX__fstack_reuse_none
+-- Performing Test have_CXX__fstack_reuse_none - Success
+-- Performing Test have_CXX__fstack_protector_all
+-- Performing Test have_CXX__fstack_protector_all - Success
+-- Performing Test have_CXX__Wstack_protector
+-- Performing Test have_CXX__Wstack_protector - Success
+-- Performing Test have_C__U_FORTIFY_SOURCE
+-- Performing Test have_C__U_FORTIFY_SOURCE - Success
+-- Performing Test have_CXX__U_FORTIFY_SOURCE
+-- Performing Test have_CXX__U_FORTIFY_SOURCE - Success
+-- Performing Test have_linker__Wl___dynamicbase
+-- Performing Test have_linker__Wl___dynamicbase - Failed
+-- Performing Test have_linker__Wl___nxcompat
+-- Performing Test have_linker__Wl___nxcompat - Failed
+-- Performing Test have_linker__Wl___high_entropy_va
+-- Performing Test have_linker__Wl___high_entropy_va - Failed
+-- Performing Test have_linker__Wl__z_relro
+-- Performing Test have_linker__Wl__z_relro - Success
+-- Performing Test have_linker__Wl__z_now
+-- Performing Test have_linker__Wl__z_now - Success
+-- Performing Test have_C__Wnested_externs
+-- Performing Test have_C__Wnested_externs - Success
+-- Performing Test have_C__Wstrict_prototypes
+-- Performing Test have_C__Wstrict_prototypes - Success
+-- Performing Test have_C__Wall
+-- Performing Test have_C__Wall - Success
+-- Performing Test have_C__Wextra
+-- Performing Test have_C__Wextra - Success
+-- Performing Test have_C__Wformat
+-- Performing Test have_C__Wformat - Success
+-- Performing Test have_C__Wvla
+-- Performing Test have_C__Wvla - Success
+-- Performing Test have_C__Wcast_align
+-- Performing Test have_C__Wcast_align - Success
+-- Performing Test have_C__Wunused_parameter
+-- Performing Test have_C__Wunused_parameter - Success
+-- Performing Test have_C__Wmissing_braces
+-- Performing Test have_C__Wmissing_braces - Success
+-- Performing Test have_C__Wthread_safety
+-- Performing Test have_C__Wthread_safety - Failed
+-- Performing Test have_C__Wshadow
+-- Performing Test have_C__Wshadow - Success
+-- Performing Test have_C__Wshadow_field
+-- Performing Test have_C__Wshadow_field - Failed
+-- Performing Test have_C__Wrange_loop_analysis
+-- Performing Test have_C__Wrange_loop_analysis - Failed
+-- Performing Test have_C__Wredundant_decls
+-- Performing Test have_C__Wredundant_decls - Success
+-- Performing Test have_CXX__Wall
+-- Performing Test have_CXX__Wall - Success
+-- Performing Test have_CXX__Wextra
+-- Performing Test have_CXX__Wextra - Success
+-- Performing Test have_CXX__Wformat
+-- Performing Test have_CXX__Wformat - Success
+-- Performing Test have_CXX__Wvla
+-- Performing Test have_CXX__Wvla - Success
+-- Performing Test have_CXX__Wcast_align
+-- Performing Test have_CXX__Wcast_align - Success
+-- Performing Test have_CXX__Wunused_parameter
+-- Performing Test have_CXX__Wunused_parameter - Success
+-- Performing Test have_CXX__Wmissing_braces
+-- Performing Test have_CXX__Wmissing_braces - Success
+-- Performing Test have_CXX__Wthread_safety
+-- Performing Test have_CXX__Wthread_safety - Failed
+-- Performing Test have_CXX__Wshadow
+-- Performing Test have_CXX__Wshadow - Success
+-- Performing Test have_CXX__Wshadow_field
+-- Performing Test have_CXX__Wshadow_field - Failed
+-- Performing Test have_CXX__Wrange_loop_analysis
+-- Performing Test have_CXX__Wrange_loop_analysis - Failed
+-- Performing Test have_CXX__Wredundant_decls
+-- Performing Test have_CXX__Wredundant_decls - Success
+-- Performing Test have_C__Wformat__Wformat_security
+-- Performing Test have_C__Wformat__Wformat_security - Success
+-- Performing Test have_CXX__Wformat__Wformat_security
+-- Performing Test have_CXX__Wformat__Wformat_security - Success
+-- Performing Test have_CXX__Wredundant_move
+-- Performing Test have_CXX__Wredundant_move - Success
+-- Performing Test have_C__Wno_unused_parameter
+-- Performing Test have_C__Wno_unused_parameter - Success
+-- Performing Test have_CXX__Wno_unused_parameter
+-- Performing Test have_CXX__Wno_unused_parameter - Success
+-- Performing Test have_C__Wno_implicit_fallthrough
+-- Performing Test have_C__Wno_implicit_fallthrough - Success
+-- Performing Test have_CXX__Wno_implicit_fallthrough
+-- Performing Test have_CXX__Wno_implicit_fallthrough - Success
+-- Looking for include file endian.h
+-- Looking for include file endian.h - found
+-- Looking for include file sys/endian.h
+-- Looking for include file sys/endian.h - not found
+-- Looking for htole16
+-- Looking for htole16 - found
+-- Looking for htobe16
+-- Looking for htobe16 - found
+-- Looking for be16toh
+-- Looking for be16toh - found
+-- Looking for le16toh
+-- Looking for le16toh - found
+-- Looking for htobe32
+-- Looking for htobe32 - found
+-- Looking for htole32
+-- Looking for htole32 - found
+-- Looking for be32toh
+-- Looking for be32toh - found
+-- Looking for le32toh
+-- Looking for le32toh - found
+-- Looking for htobe64
+-- Looking for htobe64 - found
+-- Looking for htole64
+-- Looking for htole64 - found
+-- Looking for be64toh
+-- Looking for be64toh - found
+-- Looking for le64toh
+-- Looking for le64toh - found
+-- Looking for include file byteswap.h
+-- Looking for include file byteswap.h - found
+-- Looking for bswap_16
+-- Looking for bswap_16 - found
+-- Looking for bswap_32
+-- Looking for bswap_32 - found
+-- Looking for bswap_64
+-- Looking for bswap_64 - found
+-- Looking for include file sys/select.h
+-- Looking for include file sys/select.h - found
+-- Looking for include file sys/prctl.h
+-- Looking for include file sys/prctl.h - found
+-- Looking for __builtin_clz
+-- Looking for __builtin_clz - found
+-- Looking for __builtin_clzl
+-- Looking for __builtin_clzl - found
+-- Looking for __builtin_clzll
+-- Looking for __builtin_clzll - found
+-- Looking for __builtin_popcount
+-- Looking for __builtin_popcount - found
+-- Looking for M_ARENA_MAX
+-- Looking for M_ARENA_MAX - found
+-- Looking for malloc_info
+-- Looking for malloc_info - found
+-- Looking for strnlen
+-- Looking for strnlen - found
+-- Looking for daemon
+-- Looking for daemon - found
+-- Looking for getentropy
+-- Looking for getentropy - not found
+-- Looking for getentropy
+-- Looking for getentropy - not found
+-- Looking for include files sys/types.h, vm/vm_params.h
+-- Looking for include files sys/types.h, vm/vm_params.h - not found
+-- Looking for include files sys/types.h, sys/vmmeter.h
+-- Looking for include files sys/types.h, sys/vmmeter.h - not found
+-- Looking for include files sys/types.h, sys/resources.h
+-- Looking for include files sys/types.h, sys/resources.h - not found
+-- Looking for getifaddrs
+-- Looking for getifaddrs - found
+-- Looking for freeifaddrs
+-- Looking for freeifaddrs - found
+-- Performing Test HAVE_SYS_GETRANDOM
+-- Performing Test HAVE_SYS_GETRANDOM - Success
+-- Performing Test HAVE_SYSCTL_ARND
+-- Performing Test HAVE_SYSCTL_ARND - Failed
+-- Performing Test CHAR_EQUALS_INT8
+-- Performing Test CHAR_EQUALS_INT8 - Failed
+-- Performing Test HAVE_LARGE_FILE_SUPPORT
+-- Performing Test HAVE_LARGE_FILE_SUPPORT - Success
+-- Performing Test HAVE_FUNC_ATTRIBUTE_VISIBILITY
+-- Performing Test HAVE_FUNC_ATTRIBUTE_VISIBILITY - Success
+-- Performing Test HAVE_FUNC_ATTRIBUTE_DLLEXPORT
+-- Performing Test HAVE_FUNC_ATTRIBUTE_DLLEXPORT - Failed
+-- Looking for std::system
+-- Looking for std::system - found
+-- Looking for ::wsystem
+-- Looking for ::wsystem - not found
+-- Found PkgConfig: /usr/bin/pkg-config (found version ""0.29.1"") 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Found Threads: TRUE  
+-- Found Jemalloc component jemalloc: /usr/lib/x86_64-linux-gnu/libjemalloc_pic.a
+-- Check if jemalloc needs libdl - FALSE
+-- Found Jemalloc: /usr/include/jemalloc (found suitable version ""3.6.0"", minimum required is ""3.6.0"")  
+-- Performing Test ENABLE_SSE41
+-- Performing Test ENABLE_SSE41 - Success
+-- Performing Test ENABLE_AVX2
+-- Performing Test ENABLE_AVX2 - Success
+-- Performing Test ENABLE_SHANI
+-- Performing Test ENABLE_SHANI - Success
+-- Performing Test have_C__Wno_inconsistent_missing_override
+-- Performing Test have_C__Wno_inconsistent_missing_override - Success
+-- Performing Test have_C__Wno_maybe_uninitialized
+-- Performing Test have_C__Wno_maybe_uninitialized - Success
+-- Performing Test have_C__Wno_shadow
+-- Performing Test have_C__Wno_shadow - Success
+-- Performing Test have_C__Wno_sign_compare
+-- Performing Test have_C__Wno_sign_compare - Success
+-- Performing Test have_C__Wno_unused_const_variable
+-- Performing Test have_C__Wno_unused_const_variable - Success
+-- Performing Test have_CXX__Wno_inconsistent_missing_override
+-- Performing Test have_CXX__Wno_inconsistent_missing_override - Success
+-- Performing Test have_CXX__Wno_maybe_uninitialized
+-- Performing Test have_CXX__Wno_maybe_uninitialized - Success
+-- Performing Test have_CXX__Wno_shadow
+-- Performing Test have_CXX__Wno_shadow - Success
+-- Performing Test have_CXX__Wno_sign_compare
+-- Performing Test have_CXX__Wno_sign_compare - Success
+-- Performing Test have_CXX__Wno_unused_const_variable
+-- Performing Test have_CXX__Wno_unused_const_variable - Success
+-- Performing Test have_C__Wno_strict_prototypes
+-- Performing Test have_C__Wno_strict_prototypes - Success
+-- Looking for C++ include atomic
+-- Looking for C++ include atomic - found
+-- Performing Test ENABLE_HWCRC32
+-- Performing Test ENABLE_HWCRC32 - Success
+-- Performing Test have_C__pedantic
+-- Performing Test have_C__pedantic - Success
+-- Performing Test have_C__Wundef
+-- Performing Test have_C__Wundef - Success
+-- Performing Test have_C__Wno_unused_function
+-- Performing Test have_C__Wno_unused_function - Success
+-- Performing Test have_C__Wno_overlength_strings
+-- Performing Test have_C__Wno_overlength_strings - Success
+-- Performing Test have_C__std_c89
+-- Performing Test have_C__std_c89 - Success
+-- Performing Test have_C__Wno_long_long
+-- Performing Test have_C__Wno_long_long - Success
+-- Performing Test USE_ASM_X86_64
+-- Performing Test USE_ASM_X86_64 - Success
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version ""1.0.2g"") found components: Crypto 
+-- Found Event component event: /usr/lib/x86_64-linux-gnu/libevent.so
+CMake Error at /usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake:146 (message):
+  Could NOT find Event: Found unsuitable version ""2.0.21-stable"", but
+  required is at least ""2.0.22"" (found /usr/include)
+Call Stack (most recent call first):
+  /usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake:391 (_FPHSA_FAILURE_MESSAGE)
+  cmake/modules/FindEvent.cmake:85 (find_package_handle_standard_args)
+  cmake/modules/NativeExecutable.cmake:25 (find_package)
+  src/CMakeLists.txt:394 (non_native_target_link_libraries)
+  src/CMakeLists.txt:397 (link_event)",M8BWNN,reuse
+614,2019-12-19T10:10:07Z,"@jasonbcox 
+
+```
+lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.6 LTS
+Release:	16.04
+Codename:	xenial
+```
+```
+$ make --version
+GNU Make 4.1
+Built for x86_64-pc-linux-gnu
+Copyright (C) 1988-2014 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+$ gcc --version
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+```
+
+>less /usr/include/boost/version.hpp | grep ""#define BOOST_LIB_VERSION""
+
+There is no system boost installed boost is used defined in the depends.",gituser,"copy,license"
+680,2019-07-11T20:29:34Z,"*I* am not going anywhere ;-). Just too low on time due to private circumstances to keep this stuff up and running healthily. Makes me a bit sad, it was pretty cool to have my server hardcoded in abc ;-)
+
+Thanks for making the change.",molecular,stuff
+770,2019-02-13T15:03:48Z,"Hi @c0deright. I contribute to the Bitcoin Core project (https://github.com/bitcoin/bitcoin), which is the reference implementation of the Bitcoin protocol. Despite the confusing naming, this project (Bitcoin-ABC) and protocol (Bitcoin Cash) have nothing to do with Bitcoin.
+
+The code in the commit that you reference is indeed taken from a contribution of mine, to Bitcoin Core, here: https://github.com/bitcoin/bitcoin/pull/8824/files. However, the backport was misapplied. Despite the comment being include (`Blockchain contextual information (confirmations and blocktime) is not  available to code in bitcoin-common, so we query them here and push the data into the returned UniValue.`), the code to do that wasn't.
+
+The Bitcoin Cash maintainers are of course permitted to use my code (fully or partially), since it is licensed under the MIT license. That license states `THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED... IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY...`. Neither I nor the Bitcoin-ABC maintainers are 'the cause' of your showstopper.
+
+Feel free to contribute a PR to Bitcoin-ABC fix this bug. Or not. I don't really care. But please don't summon me to this project again. Thanks!",jnewbery,license
+806,2018-11-22T20:38:33Z,"I introduce our solution.
+Monacoin can checkpoint delivery that using the Alert system.
+It will be centralized, but it is better than chain split.
+And the cost of implementing this feature is minimal.
+This is a temporary measure.
+
+monacoinproject/monacoin@43e9f59  Monacoin: Resurrect the alert system
+monacoinproject/monacoin@773eb50  Monacoin: Add checkpoint RPC
+monacoinproject/monacoin@fada3ee  Monacoin: Add volatile-checkpoint
+monacoinproject/monacoin@fc4f4b3  Monacoin: Add Alert-checkpint command
+monacoinproject/monacoin@cfe4ff2  Monacoin: Disable alert-cmd with old monacoind
+monacoinproject/monacoin@f10cf9f  Monacoin: Improved alert-cmd
+monacoinproject/monacoin@4b9d0c3  Monacoin: Add maxnum argument to dumpcheckpoint rpc
+monacoinproject/monacoin@0eded4a  Monacoin: Alert-checkpint is enabled by default
+monacoinproject/monacoin@8221d0c  Monacoin: Monacoin: Improved alert-cmd and add copyright
+monacoinproject/monacoin@c75a7c9  Monacoin: normal-alert can't cancel alert-command
+monacoinproject/monacoin@454a23c  Monacoin: Monacoin: Add sub alert key
+monacoinproject/monacoin@05877ce  Monacoin: Monacoin: fix wrong comparison
+",monacoinproject,"copy,copyright"
+807,2019-01-07T05:45:40Z,"Haatschii, this is accurate.  But it still has a number of advantages.
+1. It changes from a 51%+ attack to a 51%+ attack combined with a timing attack which increases the difficulty of the attack.
+2. It removes some of the financial incentives for doing the attack.  If your replacement chain isn't selected by the community consensus because the attack chain contains double-spends that try to cheat a merchant or exchange, then the attack does not pay off.  The attacker pays for the attack and also assumes a high risk of failure of the attack.
+3. It gives a definitive number of confirmations for acceptance.
+4. In the case of a platform (like Ravencoin) where the value of the transferred assets may exceed the value of the coinbase reward, it provides an assurance after X blocks that the chain won't be automatically replaced.  Most other blockchains, including Bitcoin can't make that assurance as they remain probabilistic.
+5. Once the reason for the split is determined and manual steps are taken to gain consensus, all honest transactions will be returned to the mempool and added to the consensus chain - making everyone whole.  Unless there is a conflict (double-spend), which will then be detected and may help determine which chain is the ""honest"" chain.
+
+There are two recovery modes:
+1. It was an attack.  In which case it would be good to determine the reason and the culprit, and manually accept the ""honest"" chain.
+2. It was a sub-sea cable break or similar with no dishonest activity in which case acceptance of all transactions from both chains is an acceptable resolution.
+
+Because the difficulty of the attack is significantly increased, and the probability of a double-spend working in the attacker's favor is greatly reduced, it eliminates the incentives for malicious behavior for financial gain.  Attacks by nation states or purely malicious actors are made more difficult, but certainly possible as you've pointed out.
+
+With the additions made by Ravencoin of ensuring the chain is fully synced, and the node is ""well-connected"", it eliminates an additional attack vector of tricking nodes into forking before being fully synced.  It is only ""surprise"" re-orgs that are rejected.
+
+I've been told that at least one attack was thwarted on a different coin that adopted Ravencoin's deep reorg prevention code.",TronBlack,forking
+996,2018-05-18T14:38:20Z,"Here is the answer I copy from ftrader.
+
+----------COPY FROM https://github.com/Bitcoin-ABC/bitcoin-abc/issues/209 ----------
+
+I tried it out by synching to the minority chain with a 0.16.2 client.
+
+Then I did as follows to get onto the majority chain:
+
+Invalidate a pre-fork block:
+
+$ bitcoin-cli invalidateblock 000000000000000000434c281fb3ed692efea5af769aedb090b2b9f395b5386e
+
+Stop the client:
+
+$ bitcoin-cli stop
+
+Upgrade to 0.17.1 and restart the daemon (not shown)
+
+Reconsider the block I previously invalidated:
+
+$ bitcoin-cli reconsiderblock 000000000000000000434c281fb3ed692efea5af769aedb090b2b9f395b5386e
+
+I did not need to manually change my peers.dat or banlist.dat, but I didn't leave much time for all my peers to become banned. It may be wise to delete those files (or move them out the way) before restarting the upgraded daemon.
+
+----------COPY FROM https://github.com/Bitcoin-ABC/bitcoin-abc/issues/209 ----------",jasonOramo,copy
+1045,2018-05-15T09:01:41Z,"**Have these funds been confirmed on the blockchain yet?**
+
+I remember submitting something similar to this to the Bitcoin Core team a few years ago.  I was noticing discrepancies with account balances after making numerous deposits and withdrawals from wallets on my full node. They replied how **getbalance** did not work the way that most _thought it should work_.
+
+**The Solution**
+(_Things might have changed since then, research many answers for optimal outcome_)
+
+They told me that developers (me) were responsible for maintaining precise balances and record keeping.  
+My Immediate thought: _Wonderful, now remind me what I need you guys for again?? lol_
+I wanted to reply: just fix the damn thing!  But that wouldn't be prudent (_Bush Accent_) and in most cases, the open source community will promptly tell you to accept your bland soup and to be grateful of your free well lit prison cell.  They will also be looking forward to your brilliant solution in a pull request that must satisfy their coding style, pass all automated tests to may or may not be merged into their _perfect_ code.  Should you be so lucky that you a stranger be included into their royal family. AKA, _""If you don't like it, make it forking happen!""_
+
+In the end, I proceeded with the latter by creating two database tables: **users** and **transactions**.  All incoming transactions are obtained via the **listtransactions** command which I decided to summon once every minute. Then store each transaction accordingly by iterating through the transaction results (JSONRPC), each record contains all the data you need (confirmations, amount, dates, txid, etc). But once a minute, what if I receive a transaction and user has to wait a whole 59 seconds to be notified??! Not acceptable, by my standards at least. So I appended this line to bitcoin.conf _(which needs to be renamed other than bitcoin.conf in the near future, I'll stop my procrastination and submit a PR when I have time, most likely never...)_
+
+`walletnotify=curl -k https://www.mydomain.io/transactions/add/bch/%s`
+
+That instantly pings a URL route to run a function to insert the new transaction and notify the user via sockets.io.emit() call. 
+
+Lastly, I call a calculateUserBalance() function that runs a MYSQL SUM command on an indexed user_id column, allowing for a quick lookups well into the millions of records, if need be.  Took it one step further and stored the calculated user balance in Redis, now I have blazing fast looks on memory instead of hitting flash hard drives which are infinitely slower. Now obviously, when a new transaction comes in I update that REDIS balance.  One time expensive _write_ operation then many cheap _reads_ after, now we are ready to scale to the moon.
+
+All that wasn't too complicated at all for me and I enjoyed the hell out of writing it as it fits my particular needs perfectly.  Now I been programming for over a decade and I am completely obsessed with code/crypto, that's not everyone by a long shot.  Bitcoin CASH needs to separate itself from Bitcoin and really improve this getbalance functionality wherever possible, if it can be improved to save us all more _TIME_",knoxcard,"forking,open source"
+1083,2018-05-15T10:09:59Z,"I had not realized I posted **bcash-cli**, as I simply copy and pasted the output from my Linux terminal.  Renamed all the Bitcoin ABC binaries because it was absolutely required to specify a different name other than **bitcoin-*****, in order to prevent conflicts between running Bitcoin and Bitcoin Cash full node on the same server. Even after creating individual Linux subuser accounts to further separate and organize, they still wouldn't play nice with each other (_sibling rivalry at its worst)_  by sharing /usr/bin/, /usr/local/bin etc.  So my choices where bitcoin-cash or bcash. I am not lazy as I can type incredibly fast, just prefer shorter names and names that will not confuse me.  If there is another way to resolve the issue, I've not stumbled across it.  Perhaps a virtual machine setup?  But that would be a lot of effort and overkill.  Funny, how I read an article today that stated how some take offense to referring to Bitcoin Cash as BCash and some love it because it breaks the ties with the original Bitcoin fork.
+
+Anyways, I wrote that entire paragraph to hopefully create a few laughs, but most importantly on a serious note... I meant no offense by posting bcash-cli, if any offense was taken, my sincerest apologies.
+
+Thanks for your contribution to the project!",knoxcard,copy
+1123,2018-04-19T21:54:42Z,"@NiKiZe So is it possible to delete all those transactions even if you don't know which one contains bad stuff which don't? I know you can reject OP_RETURN if you want but is it possible after the block is forged? Doesn't it make the whole chain invalid, with the wrong checksum? And as for updates of laws to make it possible for people to store cp for others - you have to be kidding me. 
+
+@rojii That's not a joke. I'm completely serious.",KarolTrzeszczkowski,stuff
+1160,2018-06-30T08:25:24Z,"Well if BitcoinABC never did support Bitpay then it looks like I am mistaken in thinking it worked in bitcoin-abc-0.16.2-x86_64. Fair comment.  In which case it cannot be described as a bug, true. 
+
+But, and its a big but, bitpay is one of the biggest payment processors and so like it or not, (and I don't) their protocol becomes part of the Bitcoin protocol that users will use when paying for goods and services. BitcoinABC developers saying oh the reason your goods haven't arrived and your payment hasn't gone through is Bitpay's fault just doesn't wash.  You cannot expect users to know this stuff, it just has to work! 
+",TheDoktar,stuff
+1305,2017-11-28T12:10:15Z,"To express our ""plant"" in terms of the excellent [PID controller article](http://ctms.engin.umich.edu/CTMS/index.php?example=Introduction&section=ControlPID) you linked to, we have an input ""force"" which is the Price/Difficulty ratio and an output hashrate. If we design a controller for this force, we are assuming miners are simply selfish for the P/D instead of malicious which is a risky assumption.  To make matters more difficult in seeking a controller, our ""plant"" is a non-linear function (linear for small P/D ratio changes, but ""exponential"" when it changes about +/- 30%).  It looks like an asymptotic tangent function, so it's not nice as exponential math. The Laplace transform of tangent function is incredibly ugly because of the infinities.  The ""plant"" no mass and little dampening (a delay in the hashrate change after a P/D ratio change), so in another way it's not as complicated.  I mean our plant to control is something ```P/D=k1*tan(k2*hashes)``` or ```D=P/(k1*tan(k2*hashes))``` where we have control of D, don't know P (price), and want to reach steady state quickly.  The plant in the article is ```F=k1*x + k2*x'+mass*x''``` where k1 is spring constant.  Notice there is no unknown input variable like P.  Their controller is function for F that quickly obtains a target x.  Real systems needing PID controllers seem to always have some sort of mass that leads to linear second order differential equations.  So it's not a trivial task of copying how PID controllers are done. You need to go back to more fundamental math (maybe linearize the ""tangent"" function) and end up with something a bit different than a normal PID controller that will probably go in a direction that intuitive ideas are already leading us. ",zawy12,copy
+1344,2017-11-15T13:09:37Z,"You have some bad stuff in you build folder.
+
+Run `make distclean` , rereun configure and rebuild.",deadalnix,stuff
+1360,2017-11-19T20:34:31Z,"@jli225 if you're going to accuse someone of lieing in a git issue, you better show some proof.  You've so far failed at both tech skills and people skills.
+
+Where are your code commits or review notes anyway? Oh wait... no tech skills or people skills, got it.
+
+Hard-forking without replay protection has 100% already caused the loss of funds on the original chain due to tx replay. Takes 5 seconds on a block explorer to see this.",phzi,forking
+1469,2017-09-13T00:17:31Z,"I agree with this change. Although I am not sure if the core copyright should start at 2009. The core rebrand happened in 2013: https://bitcoin.org/en/release/v0.9.0
+
+Also, I wonder if copyright by an entity that is not a legal entity, without copyright assignment agreements, is even a good way to do this. For example, Bitcoin Core is a different group now, they removed developers. The copyright of their contributed code still belongs to those developers, yet they are not credited. You seem to have knowledge about this, care to elaborate?",EchterAgo,"copy,copyright"
+1470,2017-09-13T00:43:17Z,"Whether it applies to a non-entity or not is a more esoteric question and I'm not a lawyer. However, regardless of the legal implications of a copyright stamp, The license says basically, ""you can use my stuff as long as you keep that little thing up there."" It does not say ""as long as that little thing up there is legally sound"". So the legality of the stamp and the requirements to keep it are completely separate concerns.
+
+Satoshi appears to have called him a ""Bitcoin Developer"". That's what he wrote personally, and no one is allowed to change it. The core team called themselves ""The Bitcoin Core Developers"" and they claimed copyright from 2009 onwards, and no one is allowed to change it (if the 2009 is challenged in court and loses, doesn't matter... that's what they wrote and a condition of the license they gave us is that we don't change it.)
+
+Now, your question DOES apply to the Bitcoin ABC developers, since we are editing this and we have copyright ownership of our contributions. However, EVERY person represented by that stamp (anyone who contributed to Bitcoin ABC under the current license) needs to sign off on a change (this is why CLAs are often nice). Of course, we could add another one... say, start a non-profit foundation and place the foundation's name there.
+
+Personally, I would be proud to see the mark that Satoshi left representing himself put back on the code he wrote that we are using. I don't care what it says or whether it has any legal meaning. He had 1 freaking simple condition for us to be able to use his code and we couldn't even comply with that.",paulberg,"copy,stuff,license,copyright"
+1497,2017-09-10T23:42:59Z,"For the 99% of users that don't upgrade their nodes immediately upon posting of binaries on bitcoin.org, does that mean that Core hasn't released a fixed until they upgrade their nodes? I await the shifting of goalposts.
+
+No response to the copyright infringement happening in this repository then? Or do you think it's acceptable to break open source licenses? I expect more deflection to follow.",chrisrico,"copy,license,copyright,open source"
+1500,2017-09-10T23:59:37Z,"Unlike in the Bitcoin Cash world, rushing releases to critical pieces of code is not an option.
+
+Would you care to comment on the *actual* topic at hand, which is widespread copyright infringement by the primary Bitcoin ABC developer?",chrisrico,"copy,copyright"
+1501,2017-09-11T00:11:08Z,"We just pushed the release ~4 days ahead of schedule due to an unethical breach of confidentiality by chjj whom stated that it shouldn't be disclosed until the fixes were widely deployed and then broke his word without warning (and apparently after telling conference organizers he would not do so https://twitter.com/BashCo_/status/906866338563588097  ).  Fortunately we were able to do this because we've already had a reasonable release candidate cycle spanning back the last month, but even with that it still takes time to perform multiparty deterministic builds and can't be sped up: review takes time and if a release can be pushed without review it would be an immediate vulnerablity.  But all this is completely offtopic for the habitual dishonest and license violating misattribution by this project's contributor. 
+
+We kindly permit bcash to just outright copy our fixes but they're **required** to preserve the attribution.  Going on and fraudulently claiming to have fixed it faster while misattributing our own fixes is just over the top; it isn't just unprofessional but it also risks harming the users of this software. I think we're being more than tolerant here and if reasonable requests to both behave with the minimum amount of professionalism and comply with the law are responded to evasion and insults any user of this software should really be questioning the safety of running it in the future.",gmaxwell,"copy,license"
+1502,2017-09-11T00:24:39Z,"How many months does it take you to review a release? Do all of you take months to review each others small fixes for serious vulnerabilities?
+
+To be honest, regardless of whether it violates the MIT license, the attribution in the commit you want to discuss here is a small issue compared to the public attribution you are failing to give to the person who found and reported this vulnerability to you. Instead of trying to pretend that you knew beforehand that the problem existed and was serious perhaps you should thank Chris Jeffrey for his efforts in finding the bug and his private disclosure to you months ago. Perhaps also you should apologise publicly to all users of all the Bitcoin forks for having failed after all this time to make a release which fixes the problem, and for wasting your time with petty legal arguments like this now that the vulnerability is public and you have still not released a fix?",hedgepigdaniel,license
+1503,2017-09-11T02:02:18Z,"> So you guys are prioritizing this instead of releasing a new version of Bitcoin Core that is not vulnerable?
+
+This has nothing to do with the fact you're copy/pasting code and stripping out author. This is not done in any opensource project and you're trying to divert attention away from it. It's this project that creates unneccessary annoyance and extra work for the maintainers of bitcoin core.",thijstriemstra,copy
+1506,2017-09-11T05:27:06Z,"Okay guys, I doubt this repo has anything to do with core's massive bug they refused to fix for two months...
+
+Also @gmaxwell, why do you always make issues that has nothing to do with the code? Is there an actual issues created by this lack of copyright notice? I doubt it. You know damn well how to deal with this things. You are not the copyright assignee either.",checksum0,"copy,copyright"
+1507,2017-09-11T09:38:58Z,"It's worth noting that the repo can be taken down for this reason, so maybe you should just fulfil the legal requirement of attribution, if only because it's a legal requirement; provided you have no moral compass whatsoever to give attribution otherwise.
+
+See:
+
+- https://opensource.stackexchange.com/questions/5120/what-if-somebody-removed-my-name-from-mit-license
+
+- https://help.github.com/articles/dmca-takedown-policy/",is55555,license
+1508,2017-09-11T09:55:14Z,"LOL... https://github.com/Bitcoin-ABC/bitcoin-abc/blob/master/COPYING
+
+No copyright infringement has taken place. Full credit remains in the license. It's an absolute nonsense to suggest that every single merge or line change needs to be attributed to it's respective author. If people want to dig deep, all that info is in the commits.",libitx,"copy,license,copyright"
+1509,2017-09-11T10:07:21Z,"I'm all about free speech, but I think Greg & his Electric Trolls should
+find other places to do their work. I get it, they're scared they'll lose
+their power, but If ever there was a (non) issue begging for a lock, this is it.
+
+On Mon, Sep 11, 2017 at 5:55 AM, libitx <notifications@github.com> wrote:
+
+> LOL... https://github.com/Bitcoin-ABC/bitcoin-abc/blob/master/COPYING
+>
+> No copyright infringement has taken place. Full credit remains in the
+> license. It's an absolute nonsense to suggest that every single merge or
+> line change needs to be attributed to it's respective author. If people
+> want to dig deep, all that info is in the commits.
+>
+> —
+> You are receiving this because you are subscribed to this thread.
+> Reply to this email directly, view it on GitHub
+> <https://github.com/Bitcoin-ABC/bitcoin-abc/issues/85#issuecomment-328480924>,
+> or mute the thread
+> <https://github.com/notifications/unsubscribe-auth/APNcvh4Pm-_GDgUzvT4iovehrDag1F8Oks5shQOFgaJpZM4PSc8w>
+> .
+>
+",mpatc,"copy,license,copyright"
+1511,2017-09-11T10:50:15Z,"This is the silliest thing I've seen in a long while. No license terms have been broken, COPYING correctly credits Core, and the few files I've looked do so even in the headers (which would not have been necessary according to the license)
+
+Anyone who claims there's a license violation and referring to legal obligations should brush up on their open source license knowledge. Alternatively, if the Core developers want names attached to commits to be referenced by downstream projects, a new license with such terms should be created for future versions of the upstream project.",troed,"license,open source"
+1512,2017-09-11T11:12:22Z,"@gmaxwell I don't condone @deadalnix behaviour, but doesn't [this](https://github.com/Bitcoin-ABC/bitcoin-abc/blob/master/COPYING#L3) satisfy the attribution requirement of the MIT license?",mjamin,license
+1565,2017-08-25T21:20:36Z,"jzcjca00 all this sounds good, is there a BCH foundation or coding team that can officially decide of this ? and push this ?
+Should we setup a governance model ?
+",brian2001,governance
+1593,2017-08-12T10:05:33Z,"I just got linked here. I'm the release manager of Bitcoin Classic and according to the discussion (which was how I first learned of this issue) I choose to use ""bitcoincash"" as a prefix.
+This code is available on git and released in the ubuntu PPA 'nightly builds'.
+
+Bitcoin XT is also using the ""bitcoincash"" prefix.
+
+Please use the 'bitcoin-ml' list for such cross-industry details planning and coordination, I think things will go smoother that way.",zander,coordination
+1715,2017-08-01T13:54:37Z,@c0deright We are forking. That's the whole point. Closing :),deadalnix,forking
+1721,2017-08-01T21:50:52Z,"just for info (for debugging etc)
+
+the patchset from the bitprim repo is the same one as the one in this PR, just it's renamed and rebased in the PR
+
+https://github.com/Bitcoin-ABC/bitcoin-abc/pull/34
+
+we run the version built here (the same patches, on top of 0.14.6 again, plus some docker stuff for building static files deterministically)
+
+https://github.com/satoshilabs/bitcoin-abc
+
+You can compare it with bitcoin core with bitcore patches (the reformatting changes do that more complicated, but that is what it is) - https://github.com/satoshilabs/bitcoin
+
+I don't really know where might the issue be,  it seems everything should be working, but it isn't. Some blocks just don't save the txs into the address index.
+
+I will try the qa tests",karelbilek,stuff
+1763,2017-07-30T20:06:54Z,"No, MTP must move forward, it is a consensus rule already. And there is code to generate a big block when needed by stuffing the coinbase when there isn't enough transaction in the mempool.",deadalnix,stuff
+1803,2017-09-04T22:54:32Z,"I still don't think you understand.
+I run an exchange, we ask the user to give us their BTC or BCH address on a withdrawal form. 
+Whatever they type in is up to them but we have had some users inputting the BTC address in the BCH withdrawal form - same goes for the BCH address in the BTC withdrawal form. How do I validate this then?
+
+And it goes for the fundings as well - my QR codes are properly prefixed but some users send us coins from other exchanges and copy/paste the address I give them.
+
+Do you understand?",axelay,copy
+1821,2017-07-27T13:37:51Z,"And ad hominems are poor substitutes for arguments.
+
+Many companies and open source projects have a coding standards. Bitcoin has none and it's a complete mess. The good news is that Bitprim already has the set of patches you want, so it's all good.",deadalnix,open source
+1955,2017-05-12T16:52:36Z,"Ok I added the copy right blurb, rewrote the loop so it doesn't have edge case when the size is 0 and fixed typo. I think we should keep setting pfClean as this  matter is case there is an error before we reach ApplyBlockUndo.",deadalnix,copy
+1956,2017-05-12T18:52:36Z,"Please fix undo.h / validation.{h,cpp} copyright year:
+
+`// Copyright (c) 20017 The Bitcoin developers`
+
+can be in next update",ftrader,"copy,copyright"
