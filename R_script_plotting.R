@@ -10,6 +10,7 @@ at_complete <- na.omit(at)[!(na.omit(at)$X %in% c("locked", "comment_deleted")),
 
 row.names(at_complete)
 
+#Barplot - BTC
 par(mar=c(5, 11, 3, 3))
 barplot(height=at_complete$common.devs.activity.on.Bitcoin.after.fork....of.all.activity.after.fork.*100, 
         names=at_complete$X, 
@@ -18,8 +19,18 @@ barplot(height=at_complete$common.devs.activity.on.Bitcoin.after.fork....of.all.
         col="#69b3a2", 
         horiz = TRUE, 
         las = 1)
+
+# Add minimum line
 abline(v = min(at_complete$common.devs.activity.on.Bitcoin.after.fork....of.all.activity.after.fork.*100), col = "red")
 
+# Add average line
+abline(v = mean(at_complete$common.devs.activity.on.Bitcoin.after.fork....of.all.activity.after.fork.*100), col = "blue")
+
+# Add legend
+legend("topright", legend=c("Minimum", "Average"), col=c("red", "blue"), lty=1, cex=0.8)
+
+
+#Barplot - BCH
 barplot(height=at_complete$common.devs.activity.on.Bitcoin.ABC....of.all.activity.*100, 
         names=at_complete$X, 
         xlab = "% performed by common developers",
@@ -27,8 +38,18 @@ barplot(height=at_complete$common.devs.activity.on.Bitcoin.ABC....of.all.activit
         col="#4DB3E6", 
         horiz = TRUE, 
         las = 1)
+
+# Add minimum line
 abline(v = min(at_complete$common.devs.activity.on.Bitcoin.ABC....of.all.activity.*100), col = "red")
 
+# Add average line
+abline(v = mean(at_complete$common.devs.activity.on.Bitcoin.ABC....of.all.activity.*100), col = "blue")
+
+# Add legend
+legend("topright", legend=c("Minimum", "Average"), col=c("red", "blue"), lty=1, cex=0.8)
+
+
+# Pie chart - BCH
 sum_bch_cd <- sum(at_complete$common.devs.activity.on.Bitcoin.ABC)
 sum_bch_all <- sum(at_complete$all.activity.on.Bitcoin.ABC)
 vec_bch <- c(sum_bch_cd, sum_bch_all - sum_bch_cd)
@@ -38,7 +59,7 @@ pie_labs <- c("common devs", "others")
 pie(vec_bch, labels = perc_vec_bch,  main = "Activities on BCH - after fork", col = c("#4DB3E6", "white"))
 legend("topright", pie_labs, cex = 0.8, fill = c("#4DB3E6", "white"))
 
-
+# Pie charts - BTC
 sum_btc_cd <- sum(at_complete$common.devs.activity.on.Bitcoin.after.fork)
 sum_btc_all <- sum(at_complete$all.activity.on.Bitcoin)
 vec_btc <- c(sum_btc_cd, sum_btc_all - sum_btc_cd)
